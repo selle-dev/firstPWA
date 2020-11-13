@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
 
-<title>TV Maze Example</title>
+<title>TV Guide (based on TV MAZE) Start page</title>
 	<!-- include an external style sheets -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -14,6 +14,7 @@
 	<link rel="manifest" href="manifest.json">
 	<meta name ="theme-color" content="#FFE1C4">
 	<link rel="apple-touch-icon" href="icon-192-192.png">
+
 
 </head>
 
@@ -42,8 +43,8 @@
 	<div class = "item_menu_bar_left"></div>
 	<div class = "item_menu_bar_middle">
 	<a href="index.html">HOME</a>
-	<a href="#" onclick="display_shows();">SHOWS</a>
-	<a href="#">ABOUT</a>
+	<a href="shows.html" onclick="display_shows();">SHOWS</a>
+	<a href="about.html">ABOUT</a>
 	</div>
 	<div class = "item_menu_bar_right"></div>
 	
@@ -52,120 +53,117 @@
 	<div class = "item_body_bar_left"> </div>
 	<div id="body_bar_middle" class = "item_body_bar_middle">
 					<div id="main" class = "home-container">
-						<div>
-							<p>Popular shows tonight</p>
-							<div class = "popular-container">
-							
-								<div class ="popular-cell"> <img src="http://static.tvmaze.com/uploads/images/medium_portrait/268/672051.jpg" alt=""></div>
-								<div class ="popular-cell"> <img src="http://static.tvmaze.com/uploads/images/medium_portrait/268/672051.jpg" alt=""></div>
-								<div class ="popular-cell"> <img src="http://static.tvmaze.com/uploads/images/medium_portrait/268/672051.jpg" alt=""></div>
-								<div class ="popular-cell"> <img src="http://static.tvmaze.com/uploads/images/medium_portrait/268/672051.jpg" alt=""></div>
-
-							</div>
-							<p>Upcoming Episode premieres</p>
-							<div class = "popular-container">
-							
-								<div class ="popular-cell"> <img src="http://static.tvmaze.com/uploads/images/medium_portrait/268/672051.jpg" alt="">HBO @ 21:00</div>
-								<div class ="popular-cell"> <img src="http://static.tvmaze.com/uploads/images/medium_portrait/268/672051.jpg" alt=""></div>
-								<div class ="popular-cell"> <img src="http://static.tvmaze.com/uploads/images/medium_portrait/268/672051.jpg" alt=""></div>
-								<div class ="popular-cell"> <img src="http://static.tvmaze.com/uploads/images/medium_portrait/268/672051.jpg" alt=""></div>
-
-							</div>
+						<!--
 						
-						</div>
+									<div>
+										<p>Popular shows tonight</p>
+										<div class = "popular-container">
+										
+											
+
+										</div>
+										<p>Upcoming Episode premieres</p>
+										<div class = "popular-container">
+										
+											
+
+										</div>
 									
-						<div>
-							<p>Schedule</p>
-							<div class="Schedule-table">
+									</div>
+												
+									<div>
+										<p>Schedule</p>
+										<div class="Schedule-table">
 
-								<div class="Schedule-table-cell row_h">20:00</div>
-								<div class="Schedule-table-cell row_h"></div>
+											<div class="Schedule-table-cell row_h">20:00</div>
+											<div class="Schedule-table-cell row_h"></div>
 
-							
-								<div class="Schedule-table-cell row_b"><p>21:05</p><p>HBO</p></div>
-								<div class="Schedule-table-cell row_b"><p>Has a sword named Longclaw</p></div>
+										
+											<div class="Schedule-table-cell row_b"><p>21:05</p><p>HBO</p></div>
+											<div class="Schedule-table-cell row_b"><p>Has a sword named Longclaw</p></div>
 
-							
-								<div class="Schedule-table-cell row_a"><p>21:15</p><p>Netflix</p></div>
-								<div class="Schedule-table-cell row_a">You would like to have</div>
-							
-								<div class="Schedule-table-cell row_b"><p>21:30</p><p>HBO</p></div>
-								<div class="Schedule-table-cell row_b">Has a sword named Longclaw</div>
-							</div>
+										
+											<div class="Schedule-table-cell row_a"><p>21:15</p><p>Netflix</p></div>
+											<div class="Schedule-table-cell row_a">You would like to have</div>
+										
+											<div class="Schedule-table-cell row_b"><p>21:30</p><p>HBO</p></div>
+											<div class="Schedule-table-cell row_b">Has a sword named Longclaw</div>
+										</div>
 
 
-							<div class="Schedule-table">
+										<div class="Schedule-table">
 
-								<div class="Schedule-table-cell row_h">21:00</div>
-								<div class="Schedule-table-cell row_h"></div>
-								<div class="Schedule-table-cell row_h"></div>
-								<div class="Schedule-table-cell row_h"></div>
-							
-								<div class="Schedule-table-cell row_b"><p>Jon Snow</p><p>HBO</p></div>
-								<div class="Schedule-table-cell row_b"><p>Has a sword named Longclaw Has a sword named Longclaw</p></div>
+											<div class="Schedule-table-cell row_h">21:00</div>
+											<div class="Schedule-table-cell row_h"></div>
+											<div class="Schedule-table-cell row_h"></div>
+											<div class="Schedule-table-cell row_h"></div>
+										
+											<div class="Schedule-table-cell row_b"><p>Jon Snow</p><p>HBO</p></div>
+											<div class="Schedule-table-cell row_b"><p>Has a sword named Longclaw Has a sword named Longclaw</p></div>
 
-							
-								<div class="Schedule-table-cell row_a"><p>What Ever</p><p>Netflix</p></div>
-								<div class="Schedule-table-cell row_a">You would like to have</div>
-							
-								<div class="Schedule-table-cell row_b"><p>Jon Snow</p><p>HBO</p></div>
-								<div class="Schedule-table-cell row_b">Has a sword named Longclaw</div>
-							</div>
+										
+											<div class="Schedule-table-cell row_a"><p>What Ever</p><p>Netflix</p></div>
+											<div class="Schedule-table-cell row_a">You would like to have</div>
+										
+											<div class="Schedule-table-cell row_b"><p>Jon Snow</p><p>HBO</p></div>
+											<div class="Schedule-table-cell row_b">Has a sword named Longclaw</div>
+										</div>
 
-							<div class="Schedule-table">
+										<div class="Schedule-table">
 
-								<div class="Schedule-table-cell row_h">21:00</div>
-								<div class="Schedule-table-cell row_h"></div>
-								<div class="Schedule-table-cell row_h"></div>
-								<div class="Schedule-table-cell row_h"></div>
-							
-								<div class="Schedule-table-cell row_b"><p>Jon Snow</p><p>HBO</p></div>
-								<div class="Schedule-table-cell row_b"><p>Has a sword named Longclaw Has a sword named Longclaw</p></div>
+											<div class="Schedule-table-cell row_h">21:00</div>
+											<div class="Schedule-table-cell row_h"></div>
+											<div class="Schedule-table-cell row_h"></div>
+											<div class="Schedule-table-cell row_h"></div>
+										
+											<div class="Schedule-table-cell row_b"><p>Jon Snow</p><p>HBO</p></div>
+											<div class="Schedule-table-cell row_b"><p>Has a sword named Longclaw Has a sword named Longclaw</p></div>
 
-							
-								<div class="Schedule-table-cell row_a"><p>What Ever</p><p>Netflix</p></div>
-								<div class="Schedule-table-cell row_a">You would like to have</div>
-							
-								<div class="Schedule-table-cell row_b"><p>Jon Snow</p><p>HBO</p></div>
-								<div class="Schedule-table-cell row_b">Has a sword named Longclaw</div>
-							</div>
+										
+											<div class="Schedule-table-cell row_a"><p>What Ever</p><p>Netflix</p></div>
+											<div class="Schedule-table-cell row_a">You would like to have</div>
+										
+											<div class="Schedule-table-cell row_b"><p>Jon Snow</p><p>HBO</p></div>
+											<div class="Schedule-table-cell row_b">Has a sword named Longclaw</div>
+										</div>
 
-							<div class="Schedule-table">
+										<div class="Schedule-table">
 
-								<div class="Schedule-table-cell row_h">21:00</div>
-								<div class="Schedule-table-cell row_h"></div>
-								<div class="Schedule-table-cell row_h"></div>
-								<div class="Schedule-table-cell row_h"></div>
-							
-								<div class="Schedule-table-cell row_b"><p>Jon Snow</p><p>HBO</p></div>
-								<div class="Schedule-table-cell row_b"><p>Has a sword named Longclaw Has a sword named Longclaw</p></div>
+											<div class="Schedule-table-cell row_h">21:00</div>
+											<div class="Schedule-table-cell row_h"></div>
+											<div class="Schedule-table-cell row_h"></div>
+											<div class="Schedule-table-cell row_h"></div>
+										
+											<div class="Schedule-table-cell row_b"><p>Jon Snow</p><p>HBO</p></div>
+											<div class="Schedule-table-cell row_b"><p>Has a sword named Longclaw Has a sword named Longclaw</p></div>
 
-							
-								<div class="Schedule-table-cell row_a"><p>What Ever</p><p>Netflix</p></div>
-								<div class="Schedule-table-cell row_a">You would like to have</div>
-							
-								<div class="Schedule-table-cell row_b"><p>Jon Snow</p><p>HBO</p></div>
-								<div class="Schedule-table-cell row_b">Has a sword named Longclaw</div>
-							</div>
-							<div class="Schedule-table">
+										
+											<div class="Schedule-table-cell row_a"><p>What Ever</p><p>Netflix</p></div>
+											<div class="Schedule-table-cell row_a">You would like to have</div>
+										
+											<div class="Schedule-table-cell row_b"><p>Jon Snow</p><p>HBO</p></div>
+											<div class="Schedule-table-cell row_b">Has a sword named Longclaw</div>
+										</div>
+										<div class="Schedule-table">
 
-								<div class="Schedule-table-cell row_h">21:00</div>
-								<div class="Schedule-table-cell row_h"></div>
-								<div class="Schedule-table-cell row_h"></div>
-								<div class="Schedule-table-cell row_h"></div>
-							
-								<div class="Schedule-table-cell row_b"><p>Jon Snow</p><p>HBO</p></div>
-								<div class="Schedule-table-cell row_b"><p>Has a sword named Longclaw Has a sword named Longclaw</p></div>
+											<div class="Schedule-table-cell row_h">21:00</div>
+											<div class="Schedule-table-cell row_h"></div>
+											<div class="Schedule-table-cell row_h"></div>
+											<div class="Schedule-table-cell row_h"></div>
+										
+											<div class="Schedule-table-cell row_b"><p>Jon Snow</p><p>HBO</p></div>
+											<div class="Schedule-table-cell row_b"><p>Has a sword named Longclaw Has a sword named Longclaw</p></div>
 
-							
-								<div class="Schedule-table-cell row_a"><p>What Ever</p><p>Netflix</p></div>
-								<div class="Schedule-table-cell row_a">You would like to have</div>
-							
-								<div class="Schedule-table-cell row_b"><p>Jon Snow</p><p>HBO</p></div>
-								<div class="Schedule-table-cell row_b">Has a sword named Longclaw</div>
-							</div>
+										
+											<div class="Schedule-table-cell row_a"><p>What Ever</p><p>Netflix</p></div>
+											<div class="Schedule-table-cell row_a">You would like to have</div>
+										
+											<div class="Schedule-table-cell row_b"><p>Jon Snow</p><p>HBO</p></div>
+											<div class="Schedule-table-cell row_b">Has a sword named Longclaw</div>
+										</div>
 
-						</div>
+									</div>
+								-->
 						
 					</div>
 	</div>
@@ -183,6 +181,13 @@
 			
 </div>
 
+
+<script type="module">
+	import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+
+	const el = document.createElement('pwa-update');
+	document.body.appendChild(el);
+</script>
 
 </body>
 
